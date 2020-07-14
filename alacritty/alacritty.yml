@@ -1,0 +1,30 @@
+
+
+colors:
+  primary: 
+    background: '0x343434'
+    foreground: '0xffffff'
+
+  normal: 
+    black:   '0x282a2e'
+    red:     '0x11aa45'
+    green:   '0xa54242'
+    yellow:  '0xe0d560'
+    blue:    '0x206aa8'
+    magenta: '0x85678f'
+    cyan:    '0x14897b'
+    white:   '0xffffff'
+
+font:
+  # Normal (roman) font face
+  normal:
+    # Font family
+    #
+    # Default:
+    #   - (macOS) Menlo
+    #   - (Linux) monospace
+    #   - (Windows) Consolas
+    #family: 'SF Mono'
+
+    # The `style` can be specified to pick a specific face.
+    style: Regular

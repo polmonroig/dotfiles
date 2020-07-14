@@ -4,7 +4,7 @@ configuration {
 }
 
 * {
-    font: "Google Sans Regular 12";
+    font: "Google Sans Regular 20";
     padding: 3px 5px;
     background-color: rgba(0,0,0,0);
     color: #fff;

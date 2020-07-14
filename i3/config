@@ -22,10 +22,14 @@
 #######################################
 
 # Add wallpaper
-exec_always feh --bg-scale ~/Pictures/Wallpapers/wallpaper_4.jpg
+exec_always feh --bg-scale ~/IMAGES/Wallpapers/wallpaper_9.jpg
 
 # add smooth transitions
 exec_always picom --config $HOME/.config/compton.conf
+
+
+# init terminal directory 
+exec .scripts/pwd.init
 
 # add gaps i3
 
@@ -78,7 +82,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 
 # start a terminal
-bindsym Mod1+Return exec ~/CustomScripts/kitty-terminal.sh
+bindsym Mod1+Return exec ~/.scripts/terminal.sh
 
 # kill focused window
 bindsym Mod1+Shift+q kill
@@ -130,7 +134,7 @@ bindsym Mod1+minus scratchpad show
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "Main"
+set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
 set $ws4 "4"
@@ -139,7 +143,7 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "Music"
+set $ws10 ""
 
 # switch to workspace
 bindsym Mod1+1 workspace $ws1
@@ -196,8 +200,8 @@ bindsym Mod1+r mode "resize"
 
 # open on startup 
 for_window [class="Spotify"] move to workspace $ws10
-exec spotify 
-
+# exec spotify  
+exec safeeyes --enable 
 
 # setup colors 
 #
